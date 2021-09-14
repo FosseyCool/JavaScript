@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function Sum(a,b){
+          return a+b;
+        }
+
+        function Subtraction(a,b){
+            return a-b;
+        }
+
+        function Multiplication(a,b){
+            return a*b;
+        }
+
+        function Segmentation(a,b){
+            return a/b;
+        }
+
+        function mathOperation(arg1,arg2,operation){
+            switch(operation){
+                case '+':
+                    return alert(Sum(arg1,arg2));
+                    break;
+                case '-':
+                    return alert(Subtraction(arg1,arg2));
+                    break;
+                case '*':
+                    return alert(Multiplication(arg1,arg2));
+                    break;
+                case '/':
+                    return alert(Segmentation(arg1,arg2));
+                    break;
+                default:
+                    return alert("Нет таких действий");        
+            }
+        }
+        let a=prompt("Введите первое число");
+        console.log(+a);
+        let b=prompt("Введите второе число")
+        console.log(+b);
+        let operation=prompt("Введите один из знаков: +,-,*,/")
+        console.log(operation)
+        mathOperation(+a,+b,operation)
+
+    </script>
+</body>
+</html>
